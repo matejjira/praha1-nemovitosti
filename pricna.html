@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Příčná 1+kk - propočet</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero compact">
+  <div class="wrap">
+    <div class="topbar">
+      <svg class="logo" viewBox="0 0 64 64" fill="none" aria-label="logo">
+        <circle cx="32" cy="32" r="29" stroke="#ffffff" stroke-width="2.5"/>
+        <circle cx="32" cy="32" r="22" stroke="rgba(255,255,255,.35)" stroke-width="1"/>
+        <g class="needle"><polygon points="32,11 38.5,32 32,28.5 25.5,32" fill="#f5a623"/><polygon points="32,53 25.5,32 32,35.5 38.5,32" fill="#ffffff" opacity="0.9"/></g>
+        <circle cx="32" cy="32" r="3.2" fill="#ffffff"/>
+      </svg>
+      <div class="brand">Matěj Jíra<span>Reality a investice</span></div>
+      <a class="backlink" href="index.html">← Zpět na přehled</a>
+    </div>
+    <h1>Příčná 1+kk, Praha 1 - Nové Město</h1>
+    <p class="hparams">26 m² · 7 610 000 Kč · už teď běží na Airbnb · zařízený · výtah · 2. patro ze 6</p>
+    <div class="chips">
+      <div class="chip"><div class="n" data-count="16219" data-suffix=" Kč">~16 220 Kč</div><div class="l">čistý zisk / měs</div></div>
+      <div class="chip"><div class="n">~21 %</div><div class="l">roční ROI</div></div>
+      <div class="chip"><div class="n">~916 tis.</div><div class="l">vstupní investice, vejde se do kapitálu</div></div>
+    </div>
+  </div>
+  <div class="blob a"></div><div class="blob b"></div>
+</header>
+
+<section class="wrap reveal">
+  <h2>O bytě</h2>
+  <p class="sub">Designový zrekonstruovaný 1+kk, 26 m², Příčná, Praha 1 Nové Město, v historickém Ferdinand Palace. 2. patro ze 6, výtah, zařízený, cihlový dům ve výborném stavu. Osobní vlastnictví, řádný byt, energetická třída "méně úsporná", tedy lepší než běžná G. Metro Karlovo náměstí a Muzeum v docházkové vzdálenosti. <b>Byt už teď generuje příjem z krátkodobých pronájmů přes Airbnb</b>, takže je ověřené, že to v domě funguje. Poplatky jsou známé, 4 500 Kč měsíčně včetně elektřiny.</p>
+  <a class="btn" href="https://www.sreality.cz/detail/prodej/byt/1+kk/praha-nove-mesto-pricna/1483985740" target="_blank" rel="noopener">Zobrazit inzerát na Sreality →</a>
+
+  <div class="card">
+    <h3 style="margin-bottom:14px">Kompletní rozpočet měsíčních nákladů</h3>
+    <table>
+      <tr><td>Splátka hypotéky (90 % ze 7,61 mil., 5 %, 30 let)</td><td class="r">36 766 Kč</td></tr>
+      <tr><td>Poplatky domu vč. elektřiny (dle inzerátu)</td><td class="r">4 500 Kč</td></tr>
+      <tr><td>Internet a TV</td><td class="r">600 Kč</td></tr>
+      <tr><td>Pojištění</td><td class="r">450 Kč</td></tr>
+      <tr><td>Daň z nemovitosti</td><td class="r">140 Kč</td></tr>
+      <tr><td>Úklid mezi hosty</td><td class="r">5 000 Kč</td></tr>
+      <tr><td>Spotřební materiál</td><td class="r">600 Kč</td></tr>
+      <tr><td>Rezerva na opravy a opotřebení</td><td class="r">1 200 Kč</td></tr>
+      <tr><td>Poplatek platformě 3 %</td><td class="r">2 025 Kč</td></tr>
+      <tr class="total"><td>Celkem měsíčně</td><td class="r">51 281 Kč</td></tr>
+    </table>
+    <p style="font-size:13px;color:var(--muted);margin-top:10px">Vstupní investice: akontace 761 000 + dovybavení 80 000 + právník 25 000 + rezerva 50 000 = <b>916 000 Kč</b>. Byt je zařízený, proto nízká položka na vybavení. <b>Jako jediný z výběru se vejde do volného kapitálu.</b></p>
+  </div>
+
+  <div style="height:18px"></div>
+  <h3 style="margin-bottom:10px">Zisk podle obsazenosti</h3>
+  <div class="scen">
+    <div class="s"><div class="label">Opatrný</div><div class="big">7 490 Kč</div><div class="small">obsazenost 65 %</div></div>
+    <div class="s mid"><div class="label">Cílový</div><div class="big">16 220 Kč</div><div class="small">obsazenost 75 %</div></div>
+    <div class="s"><div class="label">Dobrý rok</div><div class="big">23 200 Kč</div><div class="small">obsazenost 83 %</div></div>
+  </div>
+
+  <div class="calc" data-provoz="12490" data-extra="155000" style="margin-top:20px">
+    <h3>Kalkulačka</h3>
+    <p class="sub2">Posuň si cenu za noc a obsazenost.</p>
+    <div class="row"><label>Cena bytu</label><input type="range" class="c_cena" min="5500000" max="10000000" step="50000" value="7610000"><span class="val v_cena"></span></div>
+    <div class="row"><label>Cena za noc</label><input type="range" class="c_adr" min="1800" max="5500" step="10" value="3000"><span class="val v_adr"></span></div>
+    <div class="row"><label>Obsazenost</label><input type="range" class="c_occ" min="30" max="95" step="1" value="75"><span class="val v_occ"></span></div>
+    <div class="row"><label>Úrok hypotéky</label><input type="range" class="c_ur" min="3" max="7" step="0.1" value="5"><span class="val v_ur"></span></div>
+    <div class="out">
+      <div class="o"><div class="k">Hrubý příjem / měs</div><div class="v o_gross"></div></div>
+      <div class="o"><div class="k">Splátka hypotéky</div><div class="v o_spl"></div></div>
+      <div class="o"><div class="k">Všechny náklady / měs</div><div class="v o_nak"></div></div>
+      <div class="o hl"><div class="k">Čistý zisk / měs</div><div class="v o_zisk"></div></div>
+      <div class="o"><div class="k">Roční zisk</div><div class="v o_rok"></div></div>
+      <div class="o"><div class="k">Roční ROI</div><div class="v o_roi"></div></div>
+    </div>
+    <p class="note">Provoz mimo splátku a poplatek platformě počítám fixně 12 490 Kč měsíčně, včetně úklidu 5 000 Kč. Vložená investice: <b class="o_inv"></b></p>
+  </div>
+
+  <div class="be">Bod zvratu: <b>56 % obsazenosti</b> při ceně 3 000 Kč za noc.</div>
+
+  <div class="flag">
+    <h4>Na co pozor</h4>
+    <ul>
+      <li><b>293 tisíc za metr</b> je dost, byt je malý a drahý. Za tyhle peníze máš jinde větší plochu.</li>
+      <li>Jen 26 m², takže pár nebo dva hosté, ne rodiny. To omezuje sazbu.</li>
+      <li>Zjisti, <b>kdo Airbnb provozuje teď a jaká má reálná čísla</b>. Vyžádej si výpis obsazenosti a tržeb za poslední rok, to je zlato pro tvůj propočet.</li>
+      <li>Ověř, co přesně ze zařízení zůstává v ceně a v jakém je stavu po hostech.</li>
+      <li>Praha 1 znamená nejvyšší riziko regulace, ověř stanovy SVJ i přes to, že se tam Airbnb dělá.</li>
+    </ul>
+  </div>
+  <div class="flag ok">
+    <h4>Co má nejlepší</h4>
+    <ul>
+      <li><b>Už teď běží na Airbnb</b>, takže je ověřené, že to v domě jde. Můžeš si vyžádat reálná čísla o obsazenosti.</li>
+      <li><b>Jako jediný se vejde do volného kapitálu</b>, vstup jen 916 tisíc</li>
+      <li>Zařízený a designově zrekonstruovaný, takže minimální náklady na rozjezd</li>
+      <li>2. patro s výtahem, žádné přízemí ani suterén</li>
+      <li>Energeticky lepší než běžná G v centru</li>
+      <li>Poplatky jsou známé přesně, 4 500 Kč včetně elektřiny, žádné překvapení</li>
+      <li>Historická budova Ferdinand Palace, dobrá story pro hosty</li>
+    </ul>
+  </div>
+</section>
+
+<section class="wrap reveal">
+  <div class="cta">
+    <h2>Vejde se do kapitálu a už vydělává</h2>
+    <p>Jediný, na který máš vlastní peníze bez doplňování. Vrátit se na přehled.</p>
+    <a class="pulse" href="index.html">← Zpět na přehled</a>
+  </div>
+</section>
+
+<div class="foot wrap">Připravil Matěj Jíra. Přidáno 07.08.2026. Orientační propočet z tržních dat (AirROI, 08/2026).</div>
+
+<script src="app.js"></script>
+</body>
+</html>
