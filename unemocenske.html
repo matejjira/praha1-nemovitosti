@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>U nemocenské pojišťovny 1+kk - propočet</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero compact">
+  <div class="wrap">
+    <div class="topbar">
+      <svg class="logo" viewBox="0 0 64 64" fill="none" aria-label="logo">
+        <circle cx="32" cy="32" r="29" stroke="#ffffff" stroke-width="2.5"/>
+        <circle cx="32" cy="32" r="22" stroke="rgba(255,255,255,.35)" stroke-width="1"/>
+        <g class="needle"><polygon points="32,11 38.5,32 32,28.5 25.5,32" fill="#f5a623"/><polygon points="32,53 25.5,32 32,35.5 38.5,32" fill="#ffffff" opacity="0.9"/></g>
+        <circle cx="32" cy="32" r="3.2" fill="#ffffff"/>
+      </svg>
+      <div class="brand">Matěj Jíra<span>Reality a investice</span></div>
+      <a class="backlink" href="index.html">← Zpět na přehled</a>
+    </div>
+    <h1>U nemocenské pojišťovny 1+kk, Praha 1 - Nové Město</h1>
+    <p class="hparams">21 m² + terasa 8 m² · 7 500 000 Kč · 5. patro · výtah · klimatizace · zařízený</p>
+    <div class="chips">
+      <div class="chip"><div class="n" data-count="12885" data-suffix=" Kč">~12 890 Kč</div><div class="l">čistý zisk / měs</div></div>
+      <div class="chip"><div class="n">~17 %</div><div class="l">roční ROI</div></div>
+      <div class="chip"><div class="n">~905 tis.</div><div class="l">vstupní investice</div></div>
+    </div>
+  </div>
+  <div class="blob a"></div><div class="blob b"></div>
+</header>
+
+<section class="wrap reveal">
+  <h2>O bytě</h2>
+  <p class="sub">Garsonka 1+kk, 21 m² užitné plochy plus terasa 8 m², ulice U nemocenské pojišťovny, Praha 1 Nové Město, mezi Florencí a náměstím Republiky. 6. podlaží, tedy páté patro, výtah v domě. Jižní orientace, klimatizace, ústřední vytápění. Zařízený nábytkem a spotřebiči, tedy pračka, lednice, mikrovlnka, varná deska. Osobní vlastnictví, energetická třída G. Popis neobsahuje slovo ateliér, ubytovací jednotka ani apartmán, prodává se jako standardní byt.</p>
+  <a class="btn" href="https://www.sreality.cz/detail/prodej/byt/1+kk/praha-nove-mesto-u-nemocenske-pojistovny/2692345932" target="_blank" rel="noopener">Zobrazit inzerát na Sreality →</a>
+
+  <div class="card">
+    <h3 style="margin-bottom:14px">Kompletní rozpočet měsíčních nákladů</h3>
+    <table>
+      <tr><td>Splátka hypotéky (90 % ze 7,5 mil., 5 %, 30 let)</td><td class="r">36 235 Kč</td></tr>
+      <tr><td>Poplatky domu a fond oprav (odhad, v inzerátu chybí)</td><td class="r">1 900 Kč</td></tr>
+      <tr><td>Elektřina (třída G, ke klimatizaci připočti v létě)</td><td class="r">1 800 Kč</td></tr>
+      <tr><td>Internet a TV</td><td class="r">600 Kč</td></tr>
+      <tr><td>Pojištění</td><td class="r">450 Kč</td></tr>
+      <tr><td>Daň z nemovitosti</td><td class="r">140 Kč</td></tr>
+      <tr><td>Úklid mezi hosty</td><td class="r">5 000 Kč</td></tr>
+      <tr><td>Spotřební materiál</td><td class="r">700 Kč</td></tr>
+      <tr><td>Rezerva na opravy a opotřebení</td><td class="r">1 400 Kč</td></tr>
+      <tr><td>Poplatek platformě 3 %</td><td class="r">1 890 Kč</td></tr>
+      <tr class="total"><td>Celkem měsíčně</td><td class="r">50 115 Kč</td></tr>
+    </table>
+    <p style="font-size:13px;color:var(--muted);margin-top:10px">Vstupní investice: akontace 750 000 + dovybavení 80 000 + právník 25 000 + rezerva 50 000 = <b>905 000 Kč</b>. Byt je zařízený, takže se nepočítá plných 250 tisíc na vybavení.</p>
+  </div>
+
+  <div style="height:18px"></div>
+  <h3 style="margin-bottom:10px">Zisk podle obsazenosti</h3>
+  <div class="scen">
+    <div class="s"><div class="label">Opatrný</div><div class="big">4 740 Kč</div><div class="small">obsazenost 65 %</div></div>
+    <div class="s mid"><div class="label">Cílový</div><div class="big">12 890 Kč</div><div class="small">obsazenost 75 %</div></div>
+    <div class="s"><div class="label">Dobrý rok</div><div class="big">19 400 Kč</div><div class="small">obsazenost 83 %</div></div>
+  </div>
+
+  <div class="calc" data-provoz="11990" data-extra="155000" style="margin-top:20px">
+    <h3>Kalkulačka</h3>
+    <p class="sub2">Posuň si cenu za noc a obsazenost.</p>
+    <div class="row"><label>Cena bytu</label><input type="range" class="c_cena" min="5000000" max="10000000" step="50000" value="7500000"><span class="val v_cena"></span></div>
+    <div class="row"><label>Cena za noc</label><input type="range" class="c_adr" min="1800" max="5500" step="10" value="2800"><span class="val v_adr"></span></div>
+    <div class="row"><label>Obsazenost</label><input type="range" class="c_occ" min="30" max="95" step="1" value="75"><span class="val v_occ"></span></div>
+    <div class="row"><label>Úrok hypotéky</label><input type="range" class="c_ur" min="3" max="7" step="0.1" value="5"><span class="val v_ur"></span></div>
+    <div class="out">
+      <div class="o"><div class="k">Hrubý příjem / měs</div><div class="v o_gross"></div></div>
+      <div class="o"><div class="k">Splátka hypotéky</div><div class="v o_spl"></div></div>
+      <div class="o"><div class="k">Všechny náklady / měs</div><div class="v o_nak"></div></div>
+      <div class="o hl"><div class="k">Čistý zisk / měs</div><div class="v o_zisk"></div></div>
+      <div class="o"><div class="k">Roční zisk</div><div class="v o_rok"></div></div>
+      <div class="o"><div class="k">Roční ROI</div><div class="v o_roi"></div></div>
+    </div>
+    <p class="note">Provoz mimo splátku a poplatek platformě počítám fixně 11 990 Kč měsíčně, včetně úklidu 5 000 Kč. Vložená investice: <b class="o_inv"></b></p>
+  </div>
+
+  <div class="be">Bod zvratu: <b>59 % obsazenosti</b> při ceně 2 800 Kč za noc.</div>
+
+  <div class="flag">
+    <h4>Na co pozor</h4>
+    <ul>
+      <li><b>357 tisíc za metr užitné plochy je nejdražší poměr z celého výběru.</b> Když započítáš terasu, spadne to na 259 tisíc, ale terasa nájem netvoří celý rok.</li>
+      <li>21 m² je opravdu málo. Dva hosté maximálně, žádná rezerva pro vyšší sazbu.</li>
+      <li>Fond oprav a poplatky v inzerátu nejsou, doptej se.</li>
+      <li>Energetická třída G, k tomu klimatizace, v létě to na elektřině poznáš.</li>
+      <li>Terasa 8 m² v centru znamená potenciální stížnosti sousedů na hluk hostů. U Airbnb v Praze 1 je to reálné riziko, ověř stanovy SVJ.</li>
+      <li>Bod zvratu 59 procent je hlídací hodnota. Když regulace srazí počet nocí, byt jde rychle do minusu.</li>
+      <li>Vyžádej si list vlastnictví a ověř, že jednotka je vedená jako byt, ne ateliér.</li>
+    </ul>
+  </div>
+  <div class="flag ok">
+    <h4>Co má nejlepší</h4>
+    <ul>
+      <li>Terasa 8 m² s jižní orientací, to je na fotkách v inzerátu na Airbnb nejsilnější argument</li>
+      <li>Klimatizace už je nainstalovaná, což u letního provozu v centru není samozřejmost</li>
+      <li>Zařízený včetně spotřebičů, vstupní investice zůstává pod milionem</li>
+      <li>Páté patro s výtahem, tedy klid od ulice a žádný problém s kufry</li>
+      <li>Docházková vzdálenost na Florenc i náměstí Republiky</li>
+    </ul>
+  </div>
+</section>
+
+<section class="wrap reveal">
+  <div class="cta">
+    <h2>Malý byt, velká terasa</h2>
+    <p>Platíš hodně za metr, ale terasa a klima drží sazbu. Vrátit se na přehled.</p>
+    <a class="pulse" href="index.html">← Zpět na přehled</a>
+  </div>
+</section>
+
+<div class="foot wrap">Připravil Matěj Jíra. Přidáno 09.08.2026. Orientační propočet z tržních dat (AirROI, 08/2026).</div>
+
+<script src="app.js"></script>
+</body>
+</html>
