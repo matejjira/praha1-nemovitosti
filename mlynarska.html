@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mlynářská 3+kk - propočet</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero compact">
+  <div class="wrap">
+    <div class="topbar">
+      <svg class="logo" viewBox="0 0 64 64" fill="none" aria-label="logo">
+        <circle cx="32" cy="32" r="29" stroke="#ffffff" stroke-width="2.5"/>
+        <circle cx="32" cy="32" r="22" stroke="rgba(255,255,255,.35)" stroke-width="1"/>
+        <g class="needle"><polygon points="32,11 38.5,32 32,28.5 25.5,32" fill="#f5a623"/><polygon points="32,53 25.5,32 32,35.5 38.5,32" fill="#ffffff" opacity="0.9"/></g>
+        <circle cx="32" cy="32" r="3.2" fill="#ffffff"/>
+      </svg>
+      <div class="brand">Matěj Jíra<span>Reality a investice</span></div>
+      <a class="backlink" href="index.html">← Zpět na přehled</a>
+    </div>
+    <h1>Mlynářská 3+kk, Mlynářská, Praha 1 - Nové Město</h1>
+    <p class="hparams">72 m² · 13 800 000 Kč · 5. patro · výtah · byt · nezařízený</p>
+    <div class="chips">
+      <div class="chip"><div class="n" data-count="37782" data-suffix=" Kč">37 782 Kč</div><div class="l">čistý zisk / měs při 75 %</div></div>
+      <div class="chip"><div class="n">24,1 %</div><div class="l">roční ROI</div></div>
+      <div class="chip"><div class="n">74/100</div><div class="l">celkové skóre</div></div>
+      <div class="chip"><div class="n">1 880 000 Kč</div><div class="l">vstupní investice</div></div>
+    </div>
+  </div>
+  <div class="blob a"></div><div class="blob b"></div>
+</header>
+
+<section class="wrap reveal">
+  <h2>O bytě</h2>
+  <p class="sub">3+kk, 72 m², Mlynářská, Praha 1 Nové Město, 291 m od metra Florenc. Dvě ložnice, obývák s kuchyní a jídelnou, koupelna s vanou, samostatné WC. Cihlový dům z počátku 20. století po KOMPLETNÍ REKONSTRUKCI Z ROKU 2020, moderní výtah, plynové ústřední topení. Vysoké stropy, špaletová okna, parkety. Osobní vlastnictví, energetická třída E, tedy lepší než běžná G v centru. Pro Airbnb zásadní: dvě ložnice plus obývák uspí šest hostů, což zvedá sazbu za noc podstatně výš než u garsonky. Nabízí Svoboda & Williams.</p>
+  <a class="btn" href="https://www.sreality.cz/detail/prodej/byt/3+kk/praha-nove-mesto-mlynarska/1288729420" target="_blank" rel="noopener">Zobrazit inzerát na Sreality →</a>
+
+  <div class="card">
+    <h3 style="margin-bottom:14px">Kompletní rozpočet měsíčních nákladů</h3>
+    <table>
+      <tr><td>Splátka hypotéky (90 % z ceny, 5 %, 30 let)</td><td class="r">66 673 Kč</td></tr>
+      <tr><td>Poplatky domu a fond oprav</td><td class="r">5 000 Kč</td></tr>
+      <tr><td>Elektřina</td><td class="r">3 200 Kč</td></tr>
+      <tr><td>Internet a TV</td><td class="r">700 Kč</td></tr>
+      <tr><td>Pojištění</td><td class="r">850 Kč</td></tr>
+      <tr><td>Daň z nemovitosti</td><td class="r">280 Kč</td></tr>
+      <tr><td>Úklid mezi hosty</td><td class="r">8 000 Kč</td></tr>
+      <tr><td>Spotřební materiál</td><td class="r">1 300 Kč</td></tr>
+      <tr><td>Rezerva na opravy a opotřebení</td><td class="r">2 800 Kč</td></tr>
+      <tr><td>Poplatek platformě 3 % (v cílovém scénáři)</td><td class="r">3 915 Kč</td></tr>
+      <tr class="total"><td>Celkem měsíčně</td><td class="r">92 718 Kč</td></tr>
+    </table>
+    <p style="font-size:13px;color:var(--muted);margin-top:10px">Vstupní investice: akontace 1 380 000 Kč + zařízení 400 000 + právník 25 000 + rezerva 75 000 = <b>1 880 000 Kč</b></p>
+  </div>
+
+  <div style="height:18px"></div>
+  <h3 style="margin-bottom:10px">Zisk podle obsazenosti</h3>
+  <div class="scen">
+    <div class="s"><div class="label">Opatrný</div><div class="big">20 904 Kč</div><div class="small">obsazenost 65 %<br>ROI 13,3 %</div></div>
+    <div class="s mid"><div class="label">Cílový</div><div class="big">37 782 Kč</div><div class="small">obsazenost 75 %<br>ROI 24,1 %</div></div>
+    <div class="s"><div class="label">Dobrý rok</div><div class="big">51 284 Kč</div><div class="small">obsazenost 83 %<br>ROI 32,7 %</div></div>
+  </div>
+
+  <div class="calc" data-provoz="22130" data-extra="500000" style="margin-top:20px">
+    <h3>Kalkulačka</h3>
+    <p class="sub2">Posuň si cenu za noc a obsazenost.</p>
+    <div class="row"><label>Cena bytu</label><input type="range" class="c_cena" min="9650000" max="19300000" step="50000" value="13800000"><span class="val v_cena"></span></div>
+    <div class="row"><label>Cena za noc</label><input type="range" class="c_adr" min="1500" max="11600" step="10" value="5800"><span class="val v_adr"></span></div>
+    <div class="row"><label>Obsazenost</label><input type="range" class="c_occ" min="30" max="95" step="1" value="75"><span class="val v_occ"></span></div>
+    <div class="row"><label>Úrok hypotéky</label><input type="range" class="c_ur" min="3" max="7" step="0.1" value="5"><span class="val v_ur"></span></div>
+    <div class="out">
+      <div class="o"><div class="k">Hrubý příjem / měs</div><div class="v o_gross"></div></div>
+      <div class="o"><div class="k">Splátka hypotéky</div><div class="v o_spl"></div></div>
+      <div class="o"><div class="k">Všechny náklady / měs</div><div class="v o_nak"></div></div>
+      <div class="o hl"><div class="k">Čistý zisk / měs</div><div class="v o_zisk"></div></div>
+      <div class="o"><div class="k">Roční zisk</div><div class="v o_rok"></div></div>
+      <div class="o"><div class="k">Roční ROI</div><div class="v o_roi"></div></div>
+    </div>
+    <p class="note">Provoz mimo splátku a poplatek platformě počítám fixně 22 130 Kč měsíčně, včetně úklidu 5 000 Kč. Vložená investice: <b class="o_inv"></b></p>
+  </div>
+
+  <div class="be">Bod zvratu: <b>53 % obsazenosti</b> při ceně 5 800 Kč za noc. Pod tím byt prodělává.</div>
+
+  <div class="flag">
+    <h4>Na co pozor</h4>
+    <ul>
+        <li>VSTUPNÍ INVESTICE 1,88 MILIONU. To je skoro dvojnásobek volného kapitálu, chybí zhruba 880 tisíc. Bez doplnění peněz nebo úvěru na akontaci to nejde.</li>
+        <li>Inzerát visí od 5. 2. 2026, tedy šest měsíců, a má přes 20 tisíc zhlédnutí. Prostor smlouvat je, ale zjisti, proč se neprodal.</li>
+        <li>Zařízení není v ceně, u bytu pro šest hostů počítej spíš 400 tisíc než obvyklých 250.</li>
+        <li>Větší byt znamená víc úklidu, počítám 8 000 Kč měsíčně místo 5 000.</li>
+        <li>5. patro, ověř na místě, že výtah jede až nahoru.</li>
+        <li>Praha 1 znamená nejvyšší riziko regulace Airbnb, ověř stanovy SVJ.</li>
+        <li>Svoboda & Williams je prémiová kancelář, provize bývá vyšší. Ověř, kdo ji platí.</li>
+    </ul>
+  </div>
+  <div class="flag ok">
+    <h4>Co má nejlepší</h4>
+    <ul>
+        <li>NEJVYŠŠÍ ABSOLUTNÍ ZISK z celého výběru, zhruba dvaapůlkrát víc než u garsonek</li>
+        <li>NEJNIŽŠÍ BOD ZVRATU z celého výběru. Velký byt má vysoké tržby vůči nákladům, takže je nejodolnější proti slabé sezóně</li>
+        <li>Kompletní rekonstrukce 2020, tedy žádné velké opravy v dohledu</li>
+        <li>Energetická třída E a plynové ústřední topení, výrazně levnější provoz než přímotop nebo třída G</li>
+        <li>Dvě ložnice plus obývák uspí šest hostů, to je pro Airbnb úplně jiná cenová kategorie</li>
+        <li>Moderní výtah, 5. patro, žádné přízemí ani podkroví</li>
+        <li>Špaletová okna, vysoké stropy a parkety, hosté na tohle slyší a promítne se to do recenzí</li>
+        <li>291 m od metra Florenc, blízko Masarykova nádraží</li>
+        <li>Skvělý plán B, velký byt v centru se dobře pronajme i dlouhodobě</li>
+    </ul>
+  </div>
+</section>
+
+<section class="wrap reveal">
+  <div class="cta">
+    <h2>Skóre 74 ze 100</h2>
+    <p>Vrátit se na přehled a porovnat s ostatními byty.</p>
+    <a class="pulse" href="index.html">← Zpět na přehled</a>
+  </div>
+</section>
+
+<div class="foot wrap">Připravil Matěj Jíra. Aktualizováno 11.08.2026. Orientační propočet z tržních dat (AirROI, 08/2026). Generováno automaticky z byty.json.</div>
+
+<script src="app.js"></script>
+</body>
+</html>
