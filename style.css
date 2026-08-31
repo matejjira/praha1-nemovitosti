@@ -42,8 +42,11 @@ p.lead{font-size:19px;color:#d3eee4;margin-top:18px;max-width:680px}
 .chip .n{font-size:25px;font-weight:800;color:var(--amber)}
 .chip .l{font-size:12.5px;color:#cfe9df;margin-top:3px}
 
-.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
-.reveal.in{opacity:1;transform:none}
+/* Obsah je viditelny i bez JS. Skryva se az kdyz JS prida tridu .anim na <html>,
+   takze selhani nebo vypnuti JS nikdy neznamena prazdnou stranku. */
+.reveal{opacity:1}
+html.anim .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+html.anim .reveal.in{opacity:1;transform:none}
 
 .grid{display:grid;gap:18px;grid-template-columns:repeat(3,1fr)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;transition:transform .2s ease,box-shadow .2s ease}

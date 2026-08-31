@@ -32,15 +32,16 @@
 
   var sekce=document.querySelectorAll('.reveal');
   function odkryjVse(){sekce.forEach(function(s){s.classList.add('in');});}
-  if(!('IntersectionObserver' in window)){odkryjVse();}
-  else{
-    // threshold musi byt 0. Sekce se seznamem byva vyssi nez okno prohlizece,
-    // takze procentualni prah by se u ni nikdy nesplnil a nikdy by se nezobrazila.
+  if('IntersectionObserver' in window){
+    // Trida .anim zapina skryvani. Pridava se az tady, takze kdyz cokoliv vys
+    // spadne, obsah zustane videt misto prazdne stranky.
+    document.documentElement.classList.add('anim');
+    // threshold musi byt 0. Sekce se seznamem je vyssi nez okno prohlizece,
+    // takze procentualni prah by se u ni nikdy nesplnil a nezobrazila by se.
     var io=new IntersectionObserver(function(es){
       es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
     },{threshold:0,rootMargin:'0px 0px -80px 0px'});
     sekce.forEach(function(s){io.observe(s);});
-    // pojistka, kdyby observer z jakehokoliv duvodu nesepnul
-    setTimeout(odkryjVse,1200);
+    setTimeout(odkryjVse,1200);  // pojistka, kdyby observer nesepnul
   }
 })();
