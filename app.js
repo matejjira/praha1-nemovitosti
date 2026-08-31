@@ -30,8 +30,17 @@
     calc();
   });
 
-  var io=new IntersectionObserver(function(es){
-    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
-  },{threshold:.12});
-  document.querySelectorAll('.reveal').forEach(function(s){io.observe(s);});
+  var sekce=document.querySelectorAll('.reveal');
+  function odkryjVse(){sekce.forEach(function(s){s.classList.add('in');});}
+  if(!('IntersectionObserver' in window)){odkryjVse();}
+  else{
+    // threshold musi byt 0. Sekce se seznamem byva vyssi nez okno prohlizece,
+    // takze procentualni prah by se u ni nikdy nesplnil a nikdy by se nezobrazila.
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+    },{threshold:0,rootMargin:'0px 0px -80px 0px'});
+    sekce.forEach(function(s){io.observe(s);});
+    // pojistka, kdyby observer z jakehokoliv duvodu nesepnul
+    setTimeout(odkryjVse,1200);
+  }
 })();
