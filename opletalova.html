@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Opletalova 1+kk - propočet</title>
-<link rel="stylesheet" href="style.css?v=1e895607">
+<link rel="stylesheet" href="style.css?v=34c95110">
 </head>
 <body>
 
@@ -23,10 +23,10 @@
     <h1>Opletalova 1+kk, Opletalova 9, Praha 1 - Nové Město</h1>
     <p class="hparams">27 m² · 8 290 000 Kč · 7. patro, dva výtahy · výtah · byt · zařízený</p>
     <div class="chips">
-      <div class="chip"><div class="n" data-count="13815" data-suffix=" Kč">13 815 Kč</div><div class="l">čistý zisk / měs při 75 %</div></div>
-      <div class="chip"><div class="n">16,8 %</div><div class="l">roční ROI</div></div>
-      <div class="chip"><div class="n">70/100</div><div class="l">celkové skóre</div></div>
-      <div class="chip"><div class="n">984 000 Kč</div><div class="l">vstupní investice</div></div>
+      <div class="chip"><div class="n" data-count="-14045" data-suffix=" Kč">-14 045 Kč</div><div class="l">čistý zisk / měs při 75 %</div></div>
+      <div class="chip"><div class="n">-17,1 %</div><div class="l">roční ROI</div></div>
+      <div class="chip"><div class="n">39/100</div><div class="l">celkové skóre</div></div>
+      <div class="chip"><div class="n">46 088 Kč</div><div class="l">splátky za měsíc</div></div>
     </div>
   </div>
   <div class="blob a"></div><div class="blob b"></div>
@@ -41,6 +41,7 @@
     <h3 style="margin-bottom:14px">Kompletní rozpočet měsíčních nákladů</h3>
     <table>
       <tr><td>Splátka hypotéky (90 % z ceny, 5 %, 30 let)</td><td class="r">40 052 Kč</td></tr>
+      <tr><td>Splátka stavebka (akontace 10 %, 6,2 %, 20 let)</td><td class="r">6 035 Kč</td></tr>
       <tr><td>Poplatky domu a fond oprav</td><td class="r">3 200 Kč</td></tr>
       <tr><td>Elektřina</td><td class="r">2 600 Kč</td></tr>
       <tr><td>Internet a TV</td><td class="r">600 Kč</td></tr>
@@ -49,39 +50,44 @@
       <tr><td>Úklid mezi hosty</td><td class="r">5 000 Kč</td></tr>
       <tr><td>Spotřební materiál</td><td class="r">600 Kč</td></tr>
       <tr><td>Rezerva na opravy a opotřebení</td><td class="r">1 200 Kč</td></tr>
-      <tr><td>Poplatek platformě 3 % (v cílovém scénáři)</td><td class="r">2 092 Kč</td></tr>
-      <tr class="total"><td>Celkem měsíčně</td><td class="r">55 935 Kč</td></tr>
+      <tr><td>Poplatek platformě 3 % (v cílovém scénáři)</td><td class="r">1 418 Kč</td></tr>
+      <tr class="total"><td>Celkem měsíčně</td><td class="r">61 295 Kč</td></tr>
     </table>
-    <p style="font-size:13px;color:var(--muted);margin-top:10px">Vstupní investice: akontace 829 000 Kč + dovybavení 80 000 + právník 25 000 + rezerva 50 000 = <b>984 000 Kč</b></p>
+    <p style="font-size:13px;color:var(--muted);margin-top:10px">Akontace se nevkládá, splácí se úvěrem ze stavebního spoření. Z vlastního jde jen dovybavení 80 000 + právník 25 000 + rezerva 50 000, tedy <b>310 000 Kč</b>. Z rámce stavebka 3,5 mil. se vyčerpá 829 000 Kč, tedy 23,7 %</p>
   </div>
 
   <div style="height:18px"></div>
   <h3 style="margin-bottom:10px">Zisk podle obsazenosti</h3>
   <div class="scen">
-    <div class="s"><div class="label">Opatrný</div><div class="big">4 794 Kč</div><div class="small">obsazenost 65 %<br>ROI 5,8 %</div></div>
-    <div class="s mid"><div class="label">Cílový</div><div class="big">13 815 Kč</div><div class="small">obsazenost 75 %<br>ROI 16,8 %</div></div>
-    <div class="s"><div class="label">Dobrý rok</div><div class="big">21 032 Kč</div><div class="small">obsazenost 83 %<br>ROI 25,6 %</div></div>
+    <div class="s"><div class="label">Opatrný</div><div class="big">-20 156 Kč</div><div class="small">obsazenost 65 %<br>ROI -24,6 %</div></div>
+    <div class="s mid"><div class="label">Cílový</div><div class="big">-14 045 Kč</div><div class="small">obsazenost 75 %<br>ROI -17,1 %</div></div>
+    <div class="s"><div class="label">Dobrý rok</div><div class="big">-9 156 Kč</div><div class="small">obsazenost 83 %<br>ROI -11,2 %</div></div>
   </div>
 
   <div class="calc" data-provoz="13790" data-extra="155000" style="margin-top:20px">
     <h3>Kalkulačka</h3>
-    <p class="sub2">Posuň si cenu za noc a obsazenost.</p>
+    <p class="sub2">Posuň si cenu za noc, obsazenost a hlavně podíl akontace ze stavebka.</p>
     <div class="row"><label>Cena bytu</label><input type="range" class="c_cena" min="5800000" max="11600000" step="50000" value="8290000"><span class="val v_cena"></span></div>
-    <div class="row"><label>Cena za noc</label><input type="range" class="c_adr" min="1500" max="6200" step="10" value="3100"><span class="val v_adr"></span></div>
+    <div class="row"><label>Cena za noc</label><input type="range" class="c_adr" min="1500" max="4200" step="10" value="2100"><span class="val v_adr"></span></div>
     <div class="row"><label>Obsazenost</label><input type="range" class="c_occ" min="30" max="95" step="1" value="75"><span class="val v_occ"></span></div>
     <div class="row"><label>Úrok hypotéky</label><input type="range" class="c_ur" min="3" max="7" step="0.1" value="5"><span class="val v_ur"></span></div>
+    <div class="row"><label>Akontace úvěrem ze stavebka</label><input type="range" class="c_ako" min="0" max="40" step="1" value="10"><span class="val v_ako"></span></div>
+    <div class="row"><label>Úrok stavebka</label><input type="range" class="c_urs" min="4" max="9" step="0.1" value="6.2"><span class="val v_urs"></span></div>
     <div class="out">
       <div class="o"><div class="k">Hrubý příjem / měs</div><div class="v o_gross"></div></div>
       <div class="o"><div class="k">Splátka hypotéky</div><div class="v o_spl"></div></div>
+      <div class="o"><div class="k">Splátka stavebka</div><div class="v o_spls"></div></div>
+      <div class="o"><div class="k">Splátky dohromady</div><div class="v o_dluh"></div></div>
       <div class="o"><div class="k">Všechny náklady / měs</div><div class="v o_nak"></div></div>
       <div class="o hl"><div class="k">Čistý zisk / měs</div><div class="v o_zisk"></div></div>
       <div class="o"><div class="k">Roční zisk</div><div class="v o_rok"></div></div>
+      <div class="o"><div class="k">Bod zvratu</div><div class="v o_zvrat"></div></div>
       <div class="o"><div class="k">Roční ROI</div><div class="v o_roi"></div></div>
     </div>
-    <p class="note">Provoz mimo splátku a poplatek platformě počítám fixně 13 790 Kč měsíčně, včetně úklidu 5 000 Kč. Vložená investice: <b class="o_inv"></b></p>
+    <p class="note">Hypotéka jde na 30 let, stavebko na 20 let. Banka půjčí nejvýš 90 %, takže co nepokryje hypotéka ani stavebko, jde z vlastního. Při akontaci 10 % se z vlastního nedává nic a ROI přestává mít smysl, tehdy se řídí bodem zvratu. Provoz mimo splátku a poplatek platformě počítám fixně 13 790 Kč měsíčně, včetně úklidu 5 000 Kč. Vložená investice: <b class="o_inv"></b></p>
   </div>
 
-  <div class="be">Bod zvratu: <b>60 % obsazenosti</b> při ceně 3 100 Kč za noc. Pod tím byt prodělává.</div>
+  <div class="be">Bod zvratu: <b>98 % obsazenosti</b> při ceně 2 100 Kč za noc a financování 90 % hypotékou plus 10 % úvěrem ze stavebka. Pod tím byt prodělává. Tržní obsazenost Prahy 1 je podle AirROI 50,8 %, hranice pro nákup je 55 %.</div>
 
   <div class="flag">
     <h4>Na co pozor</h4>
@@ -113,14 +119,14 @@
 
 <section class="wrap reveal">
   <div class="cta">
-    <h2>Skóre 70 ze 100</h2>
+    <h2>Skóre 39 ze 100</h2>
     <p>Vrátit se na přehled a porovnat s ostatními byty.</p>
     <a class="pulse" href="index.html">← Zpět na přehled</a>
   </div>
 </section>
 
-<div class="foot wrap">Připravil Matěj Jíra. Aktualizováno 07.09.2026. Orientační propočet z tržních dat (AirROI, 08/2026). Generováno automaticky z byty.json.</div>
+<div class="foot wrap">Připravil Matěj Jíra. Aktualizováno 08.09.2026. Orientační propočet z tržních dat (AirROI, 08/2026). Generováno automaticky z byty.json.</div>
 
-<script src="app.js?v=1e895607"></script>
+<script src="app.js?v=34c95110"></script>
 </body>
 </html>
