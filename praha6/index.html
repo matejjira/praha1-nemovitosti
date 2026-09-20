@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="cs"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Praha 6, přehled bytů</title>
-<link rel="stylesheet" href="style6.css?v=202609200808"></head><body>
+<link rel="stylesheet" href="style6.css?v=202609201952"></head><body>
 <div class="hero"><div class="wrap">
 <div class="top"><div class="brand">Praha 6<span>koupit před rekonstrukcí a držet</span></div>
 <div class="right"><a class="pill" href="../index.html">Praha 1 (archiv)</a><span class="pill">aktualizováno 20. 9. 2026</span></div></div>
@@ -9,8 +9,8 @@
 U každého pět čísel: all-in, hodnota po rekonstrukci, equity, měsíční dotace ve čtyřech variantách nájmu a křivka exitu.
 Hlavní číslo je <b>max kupní cena</b>, nižší z ceny, při které equity dělá aspoň 10 %, a ceny, při které dotace nepřesáhne strop lokality.</p>
 <div class="chips">
-<div class="chip"><div class="n">34</div><div class="l">kandidátů po filtrech z 33 hlídače</div></div>
-<div class="chip"><div class="n">3</div><div class="l">projde stropem dotace aspoň v jedné variantě</div></div>
+<div class="chip"><div class="n">35</div><div class="l">kandidátů po filtrech z 33 hlídače</div></div>
+<div class="chip"><div class="n">4</div><div class="l">projde stropem dotace aspoň v jedné variantě</div></div>
 <div class="chip"><div class="n">10</div><div class="l">equity aspoň 10 % (realisticky)</div></div>
 <div class="chip"><div class="n">−26 %</div><div class="l">medián max kupní ceny proti inzerátu</div></div>
 <div class="chip"><div class="n">194</div><div class="l">vyřazeno filtry (plocha, cena, lokalita, přízemí, družstvo, stav)</div></div>
@@ -48,7 +48,7 @@ Hlavní číslo je <b>max kupní cena</b>, nižší z ceny, při které equity d
 <div class="foot"><span class="score">60</span> &nbsp; Velmi dobrý · od 2026-07-09</div></a>
 </div></div></section>
 <section><div class="wrap"><h2>Všichni kandidáti</h2><p class="sub">Klik na hlavičku řadí. Dotace = kolik měsíčně doplácíš při plném financování (hypotéka 90 % + stavebko na akontaci i rekonstrukci). Zelená = pod stropem lokality (20 tis., prioritní 30 tis.).</p>
-<div class="bar"><label>Mikrolokalita <select id="f_mk"><option value="">všechny</option><option>Bubeneč</option><option>Břevnov</option><option>Dejvice</option><option>Hanspaulka</option><option>Střešovice</option><option>Vokovice</option></select></label><label>Prochází <select id="f_pass"><option value="">cokoliv</option><option value="dot">dotací</option><option value="eq">equity</option><option value="both">obojím</option></select></label><label>Inzerát do <input id="f_cena" type="number" step="500000" placeholder="Kč" style="width:130px"></label><span class="mk">zobrazeno <b id="cnt"></b></span></div>
+<div class="bar"><label>Mikrolokalita <select id="f_mk"><option value="">všechny</option><option>Bubeneč</option><option>Břevnov</option><option>Dejvice</option><option>Hanspaulka</option><option>Nebušice</option><option>Střešovice</option><option>Vokovice</option></select></label><label>Prochází <select id="f_pass"><option value="">cokoliv</option><option value="dot">dotací</option><option value="eq">equity</option><option value="both">obojím</option></select></label><label>Inzerát do <input id="f_cena" type="number" step="500000" placeholder="Kč" style="width:130px"></label><span class="mk">zobrazeno <b id="cnt"></b></span></div>
 <div class="tbl"><table id="t"><thead><tr><th data-k="skore" class="s">Skóre</th><th data-k="nazev" class="l">Byt</th><th data-k="mk" class="l">Mikrolokalita</th><th data-k="plocha">m²</th><th data-k="np">NP</th><th data-k="cena">Inzerát</th><th data-k="m2">Kč/m²</th><th data-k="max">Max kupní</th><th data-k="sleva">Sleva</th><th data-k="eqp">Equity</th><th data-k="ddn">Dotace DN</th><th data-k="dsn">Dotace SN</th><th data-k="stav" class="l">Stav</th><th data-k="od">Od</th></tr></thead><tbody>
 <tr class="row" data-skore="67" data-nazev="Mydlářka 2+1 57 m²" data-mk="Hanspaulka" data-plocha="57" data-np="5" data-cena="8900000" data-m2="156140" data-max="8123407" data-sleva="-0.087" data-eqp="0.368" data-ddn="34317" data-dsn="29928" data-stav="Velmi dobrý" data-od="2026-03-20" data-dot="1" data-eq="1">
 <td><span class="score">67</span></td>
@@ -350,6 +350,16 @@ Hlavní číslo je <b>max kupní cena</b>, nižší z ceny, při které equity d
 <td class="bad">29 319</td>
 <td class="bad">26 092</td>
 <td class="l mk">Velmi dobrý</td><td class="mk">2026-07-10</td></tr>
+<tr class="row" data-skore="19" data-nazev="Nebušice, Sichrovského, dům 116 m²" data-mk="Nebušice" data-plocha="116" data-np="0" data-cena="11600000" data-m2="100000" data-max="9395496" data-sleva="-0.190" data-eqp="-0.066" data-ddn="23373" data-dsn="11639" data-stav="Před rekonstrukcí" data-od="2026-06-16" data-dot="1" data-eq="0">
+<td><span class="score lo">19</span></td>
+<td class="l"><a class="nm" href="nebusice-sichrovskeho.html">Nebušice, Sichrovského, dům 116 m²</a> <span class="tag rk">ručně</span></td>
+<td class="l mk">Nebušice</td><td>116</td><td>dům</td>
+<td class="b">11 600 000</td><td>100 000</td>
+<td class="b">9 395 496</td><td class="warn">−19 %</td>
+<td class="bad">−7 %</td>
+<td class="bad">23 373</td>
+<td class="ok">11 639</td>
+<td class="l mk">Před rekonstrukcí</td><td class="mk">2026-06-16</td></tr>
 <tr class="row" data-skore="18" data-nazev="Svojsíkova 2+kk 41 m²" data-mk="Břevnov" data-plocha="41" data-np="3" data-cena="8900000.0" data-m2="217073" data-max="5496338" data-sleva="-0.382" data-eqp="-0.219" data-ddn="38922" data-dsn="35801" data-stav="Dobrý" data-od="2026-08-24" data-dot="0" data-eq="0">
 <td><span class="score lo">18</span></td>
 <td class="l"><a class="nm" href="1593950284.html">Svojsíkova 2+kk 41 m²</a></td>
@@ -406,4 +416,4 @@ Hlavní číslo je <b>max kupní cena</b>, nižší z ceny, při které equity d
 <tr><td class="l b">Liboc</td><td>160 833</td><td class="mk">3</td><td class="b">–</td><td class="mk">0</td><td class="bad">–</td><td>356</td><td class="mk">1</td></tr>
 </tbody></table></div></div></section>
 <div class="foot">Předpoklady: hypotéka 90 % na 30 let za 5.0 %, stavebko na akontaci i rekonstrukci na 20 let za 6.2 %, rekonstrukce 12 000 Kč/m² + 15 % rezerva, 4 měsíce bez příjmu. Metodika v METODIKA-P6.md.</div>
-<script src="app6.js?v=202609200808"></script></body></html>
+<script src="app6.js?v=202609201952"></script></body></html>
