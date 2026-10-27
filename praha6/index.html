@@ -1,9 +1,9 @@
 <!DOCTYPE html><html lang="cs"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Praha 6, přehled bytů</title>
-<link rel="stylesheet" href="style6.css?v=202610260811"></head><body>
+<link rel="stylesheet" href="style6.css?v=202610270810"></head><body>
 <div class="hero"><div class="wrap">
 <div class="top"><div class="brand">Praha 6<span>koupit před rekonstrukcí a držet</span></div>
-<div class="right"><a class="pill" href="../index.html">Praha 1 (archiv)</a><span class="pill">aktualizováno 26. 10. 2026</span></div></div>
+<div class="right"><a class="pill" href="../index.html">Praha 1 (archiv)</a><span class="pill">aktualizováno 27. 10. 2026</span></div></div>
 <h1>Kandidáti na Praze 6</h1>
 <p class="lead">Byty 40 až 80 m², min. 2+kk, do 11 mil., osobní vlastnictví, ne přízemí, ne hotová rekonstrukce.
 U každého pět čísel: all-in, hodnota po rekonstrukci, equity, měsíční dotace ve čtyřech variantách nájmu a křivka exitu.
@@ -13,18 +13,18 @@ Hlavní číslo je <b>max kupní cena</b>, nižší z ceny, při které equity d
 <div class="chip"><div class="n">1</div><div class="l">projde stropem dotace aspoň v jedné variantě</div></div>
 <div class="chip"><div class="n">2</div><div class="l">equity aspoň 10 % (realisticky)</div></div>
 <div class="chip"><div class="n">−19 %</div><div class="l">medián max kupní ceny proti inzerátu</div></div>
-<div class="chip"><div class="n">247</div><div class="l">vyřazeno filtry (plocha, cena, lokalita, přízemí, družstvo, stav)</div></div>
+<div class="chip"><div class="n">250</div><div class="l">vyřazeno filtry (plocha, cena, lokalita, přízemí, družstvo, stav)</div></div>
 </div></div></div>
 <section><div class="wrap"><h2>Nejlepší podle skóre</h2><p class="sub">Skóre 0 až 100: equity 30, dotace 30, lokalita 20, byt a dům 10, výsledek v roce 5 10.</p><div class="cards">
 <a class="card" href="mydlarka.html"><div class="band"><div class="loc">Hanspaulka · 2+1 · 57 m² · 5. NP</div><div class="nm">Mydlářka 2+1 57 m²</div></div>
-<div class="body"><div>Inzerát<b>8,90 mil.</b></div><div>Max kupní cena<b>7,58 mil.</b></div>
+<div class="body"><div>Inzerát<b>8,90 mil.</b></div><div>Max kupní cena<b>7,59 mil.</b></div>
 <div>Equity<b class="ok">+32 %</b></div>
-<div>Dotace střednědobě<b class="bad">33 410 Kč</b></div></div>
+<div>Dotace střednědobě<b class="bad">33 345 Kč</b></div></div>
 <div class="foot"><span class="score">67</span> &nbsp; Velmi dobrý · od 2026-03-20</div></a>
 <a class="card" href="susicka.html"><div class="band"><div class="loc">Hanspaulka · 3+1 · 80 m² · 2. NP</div><div class="nm">Sušická 3+1 80 m²</div></div>
-<div class="body"><div>Inzerát<b>13,50 mil.</b></div><div>Max kupní cena<b>8,62 mil.</b></div>
+<div class="body"><div>Inzerát<b>13,50 mil.</b></div><div>Max kupní cena<b>8,63 mil.</b></div>
 <div>Equity<b class="ok">+23 %</b></div>
-<div>Dotace střednědobě<b class="bad">52 606 Kč</b></div></div>
+<div>Dotace střednědobě<b class="bad">52 516 Kč</b></div></div>
 <div class="foot"><span class="score">65</span> &nbsp; Velmi dobrý · od 2026-07-22</div></a>
 <a class="card" href="nebusice-sichrovskeho.html"><div class="band"><div class="loc">Nebušice · 4+1 · 116 m² · dům</div><div class="nm">Nebušice, Sichrovského, dům 116 m²</div></div>
 <div class="body"><div>Inzerát<b>11,60 mil.</b></div><div>Max kupní cena<b>9,38 mil.</b></div>
@@ -35,25 +35,25 @@ Hlavní číslo je <b>max kupní cena</b>, nižší z ceny, při které equity d
 <section><div class="wrap"><h2>Všichni kandidáti</h2><p class="sub">Klik na hlavičku řadí. Dotace = kolik měsíčně doplácíš při plném financování (hypotéka 90 % + stavebko na akontaci i rekonstrukci). Zelená = pod stropem lokality (20 tis., prioritní 30 tis.).</p>
 <div class="bar"><label>Mikrolokalita <select id="f_mk"><option value="">všechny</option><option>Hanspaulka</option><option>Nebušice</option></select></label><label>Prochází <select id="f_pass"><option value="">cokoliv</option><option value="dot">dotací</option><option value="eq">equity</option><option value="both">obojím</option></select></label><label>Inzerát do <input id="f_cena" type="number" step="500000" placeholder="Kč" style="width:130px"></label><span class="mk">zobrazeno <b id="cnt"></b></span></div>
 <div class="tbl"><table id="t"><thead><tr><th data-k="skore" class="s">Skóre</th><th data-k="nazev" class="l">Byt</th><th data-k="mk" class="l">Mikrolokalita</th><th data-k="plocha">m²</th><th data-k="np">NP</th><th data-k="cena">Inzerát</th><th data-k="m2">Kč/m²</th><th data-k="max">Max kupní</th><th data-k="sleva">Sleva</th><th data-k="eqp">Equity</th><th data-k="ddn">Dotace DN</th><th data-k="dsn">Dotace SN</th><th data-k="stav" class="l">Stav</th><th data-k="od">Od</th></tr></thead><tbody>
-<tr class="row" data-skore="67" data-nazev="Mydlářka 2+1 57 m²" data-mk="Hanspaulka" data-plocha="57" data-np="5" data-cena="8900000" data-m2="156140" data-max="7581703" data-sleva="-0.148" data-eqp="0.323" data-ddn="37759" data-dsn="33410" data-stav="Velmi dobrý" data-od="2026-03-20" data-dot="0" data-eq="1">
+<tr class="row" data-skore="67" data-nazev="Mydlářka 2+1 57 m²" data-mk="Hanspaulka" data-plocha="57" data-np="5" data-cena="8900000" data-m2="156140" data-max="7590904" data-sleva="-0.147" data-eqp="0.323" data-ddn="37705" data-dsn="33345" data-stav="Velmi dobrý" data-od="2026-03-20" data-dot="0" data-eq="1">
 <td><span class="score">67</span></td>
 <td class="l"><a class="nm" href="mydlarka.html">Mydlářka 2+1 57 m²</a> <span class="tag rk">ručně</span></td>
 <td class="l mk">Hanspaulka</td><td>57</td><td>5</td>
 <td class="b">8 900 000</td><td>156 140</td>
-<td class="b">7 581 703</td><td class="warn">−15 %</td>
+<td class="b">7 590 904</td><td class="warn">−15 %</td>
 <td class="ok">+32 %</td>
-<td class="bad">37 759</td>
-<td class="bad">33 410</td>
+<td class="bad">37 705</td>
+<td class="bad">33 345</td>
 <td class="l mk">Velmi dobrý</td><td class="mk">2026-03-20</td></tr>
-<tr class="row" data-skore="65" data-nazev="Sušická 3+1 80 m²" data-mk="Hanspaulka" data-plocha="80" data-np="2" data-cena="13500000.0" data-m2="168750" data-max="8621866" data-sleva="-0.361" data-eqp="0.233" data-ddn="58710" data-dsn="52606" data-stav="Velmi dobrý" data-od="2026-07-22" data-dot="0" data-eq="1">
+<tr class="row" data-skore="65" data-nazev="Sušická 3+1 80 m²" data-mk="Hanspaulka" data-plocha="80" data-np="2" data-cena="13500000.0" data-m2="168750" data-max="8634779" data-sleva="-0.360" data-eqp="0.233" data-ddn="58634" data-dsn="52516" data-stav="Velmi dobrý" data-od="2026-07-22" data-dot="0" data-eq="1">
 <td><span class="score">65</span></td>
 <td class="l"><a class="nm" href="susicka.html">Sušická 3+1 80 m²</a> <span class="tag rk">ručně</span></td>
 <td class="l mk">Hanspaulka</td><td>80</td><td>2</td>
 <td class="b">13 500 000</td><td>168 750</td>
-<td class="b">8 621 866</td><td class="bad">−36 %</td>
+<td class="b">8 634 779</td><td class="bad">−36 %</td>
 <td class="ok">+23 %</td>
-<td class="bad">58 710</td>
-<td class="bad">52 606</td>
+<td class="bad">58 634</td>
+<td class="bad">52 516</td>
 <td class="l mk">Velmi dobrý</td><td class="mk">2026-07-22</td></tr>
 <tr class="row" data-skore="19" data-nazev="Nebušice, Sichrovského, dům 116 m²" data-mk="Nebušice" data-plocha="116" data-np="0" data-cena="11600000" data-m2="100000" data-max="9378811" data-sleva="-0.191" data-eqp="-0.068" data-ddn="28361" data-dsn="16627" data-stav="Před rekonstrukcí" data-od="2026-06-16" data-dot="1" data-eq="0">
 <td><span class="score lo">19</span></td>
@@ -66,21 +66,21 @@ Hlavní číslo je <b>max kupní cena</b>, nižší z ceny, při které equity d
 <td class="ok">16 627</td>
 <td class="l mk">Před rekonstrukcí</td><td class="mk">2026-06-16</td></tr>
 </tbody></table></div></div></section>
-<section><div class="wrap"><h2>Cenová mapa mikrolokalit</h2><p class="sub">Sreality API v1, nabídkové ceny, byty 2+kk až 3+1 v Praze 6, 831 inzerátů, k 2026-10-26. Nabídkové ceny, ne realizované. Konzervativní exit = 25. percentil, realistický = medián, optimistický = 75. percentil bytů po rekonstrukci.</p><div class="tbl"><table style="min-width:760px"><thead><tr><th class="l">Mikrolokalita</th><th>Zachovalý Kč/m²</th><th>n</th><th>Po rekonstrukci Kč/m²</th><th>n</th><th>Rozdíl</th><th>Nájem Kč/m²/měs</th><th>n</th></tr></thead><tbody>
-<tr><td class="l b">Břevnov</td><td>177 664</td><td class="mk">58</td><td class="b">178 125</td><td class="mk">19</td><td class="bad">+0 %</td><td>425</td><td class="mk">85</td></tr>
-<tr><td class="l b">Bubeneč</td><td>174 350</td><td class="mk">24</td><td class="b">175 426</td><td class="mk">5</td><td class="bad">+1 %</td><td>444</td><td class="mk">74</td></tr>
-<tr><td class="l b">Dejvice</td><td>185 919</td><td class="mk">27</td><td class="b">196 981</td><td class="mk">7</td><td class="bad">+6 %</td><td>440</td><td class="mk">63</td></tr>
+<section><div class="wrap"><h2>Cenová mapa mikrolokalit</h2><p class="sub">Sreality API v1, nabídkové ceny, byty 2+kk až 3+1 v Praze 6, 848 inzerátů, k 2026-10-27. Nabídkové ceny, ne realizované. Konzervativní exit = 25. percentil, realistický = medián, optimistický = 75. percentil bytů po rekonstrukci.</p><div class="tbl"><table style="min-width:760px"><thead><tr><th class="l">Mikrolokalita</th><th>Zachovalý Kč/m²</th><th>n</th><th>Po rekonstrukci Kč/m²</th><th>n</th><th>Rozdíl</th><th>Nájem Kč/m²/měs</th><th>n</th></tr></thead><tbody>
+<tr><td class="l b">Břevnov</td><td>176 461</td><td class="mk">62</td><td class="b">178 125</td><td class="mk">19</td><td class="bad">+1 %</td><td>427</td><td class="mk">90</td></tr>
+<tr><td class="l b">Bubeneč</td><td>174 350</td><td class="mk">24</td><td class="b">175 426</td><td class="mk">5</td><td class="bad">+1 %</td><td>444</td><td class="mk">75</td></tr>
+<tr><td class="l b">Dejvice</td><td>185 919</td><td class="mk">27</td><td class="b">196 981</td><td class="mk">7</td><td class="bad">+6 %</td><td>440</td><td class="mk">65</td></tr>
 <tr><td class="l b">Řepy</td><td>132 836</td><td class="mk">25</td><td class="b">164 048</td><td class="mk">5</td><td class="ok">+23 %</td><td>416</td><td class="mk">47</td></tr>
 <tr><td class="l b">Ruzyně</td><td>137 898</td><td class="mk">8</td><td class="b">167 549</td><td class="mk">2</td><td class="ok">+22 %</td><td>438</td><td class="mk">24</td></tr>
 <tr><td class="l b">Vokovice</td><td>157 001</td><td class="mk">18</td><td class="b">175 865</td><td class="mk">4</td><td class="warn">+12 %</td><td>429</td><td class="mk">25</td></tr>
-<tr><td class="l b">Hanspaulka</td><td>167 452</td><td class="mk">12</td><td class="b">231 118</td><td class="mk">9</td><td class="ok">+38 %</td><td>436</td><td class="mk">25</td></tr>
+<tr><td class="l b">Hanspaulka</td><td>167 452</td><td class="mk">12</td><td class="b">231 118</td><td class="mk">9</td><td class="ok">+38 %</td><td>437</td><td class="mk">26</td></tr>
 <tr><td class="l b">Střešovice</td><td>153 484</td><td class="mk">7</td><td class="b">305 556</td><td class="mk">3</td><td class="ok">+99 %</td><td>523</td><td class="mk">12</td></tr>
-<tr><td class="l b">Veleslavín</td><td>151 918</td><td class="mk">6</td><td class="b">185 900</td><td class="mk">2</td><td class="ok">+22 %</td><td>379</td><td class="mk">17</td></tr>
-<tr><td class="l b">Suchdol</td><td>151 151</td><td class="mk">6</td><td class="b">147 606</td><td class="mk">1</td><td class="bad">−2 %</td><td>418</td><td class="mk">24</td></tr>
+<tr><td class="l b">Suchdol</td><td>142 574</td><td class="mk">7</td><td class="b">147 606</td><td class="mk">1</td><td class="bad">+4 %</td><td>418</td><td class="mk">24</td></tr>
+<tr><td class="l b">Veleslavín</td><td>151 918</td><td class="mk">6</td><td class="b">185 900</td><td class="mk">2</td><td class="ok">+22 %</td><td>389</td><td class="mk">18</td></tr>
 <tr><td class="l b">Ořechovka</td><td>130 337</td><td class="mk">3</td><td class="b">–</td><td class="mk">0</td><td class="bad">–</td><td>522</td><td class="mk">24</td></tr>
 <tr><td class="l b">?</td><td>160 431</td><td class="mk">4</td><td class="b">116 471</td><td class="mk">1</td><td class="bad">−27 %</td><td>371</td><td class="mk">13</td></tr>
 <tr><td class="l b">Liboc</td><td>160 833</td><td class="mk">3</td><td class="b">174 186</td><td class="mk">1</td><td class="warn">+8 %</td><td>356</td><td class="mk">5</td></tr>
 <tr><td class="l b">Praha 6</td><td>193 981</td><td class="mk">2</td><td class="b">227 264</td><td class="mk">1</td><td class="ok">+17 %</td><td>467</td><td class="mk">6</td></tr>
 </tbody></table></div></div></section>
 <div class="foot">Předpoklady: hypotéka 90 % na 30 let za 5.5 %, stavebko na akontaci i rekonstrukci na 20 let za 7.0 %, rekonstrukce 12 000 Kč/m² + 15 % rezerva, 4 měsíce bez příjmu. Metodika v METODIKA-P6.md.</div>
-<script src="app6.js?v=202610260811"></script></body></html>
+<script src="app6.js?v=202610270810"></script></body></html>
